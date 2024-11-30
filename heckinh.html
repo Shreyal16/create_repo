@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* body{
+       background-color: ;
+    } */
+
+    .container {
+        height: 100vh;
+        position: relative;
+    }
+
+    .card {
+        width: 350px;
+        height: 200px;
+        position: absolute;
+        left: 40vw;
+        top: 30vh;
+        border: 2px solid greenyellow;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    div span{
+        color: greenyellow;
+        font-size: 25px;
+        font-family: "Handjet", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+    }
+
+    .dot-container {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dot {
+        color: greenyellow;
+        font-size: 20px;
+        margin: 0 2px;
+        animation: blink 1s infinite step-start;
+    }
+
+    @keyframes blink {
+        0% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <span class="alert">Initialising Hacking
+            </span>
+            <div class="dot-container">
+                <span class="dot">.</span>
+                <span class="dot">.</span>
+                <span class="dot">.</span>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+<script src="hecking.js"></script>
+
+</html>
